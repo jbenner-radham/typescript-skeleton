@@ -1,0 +1,30 @@
+{
+  "name": "typescript-skeleton",
+  "version": "0.0.0",
+  "description": "A TypeScript skeleton project.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/typescript-skeleton.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "skeleton",
+    "typescript"
+  ],
+  "author": "James Benner <james.benner@gmail.com> (http://www.jamesbenner.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbenner-radham/typescript-skeleton/issues"
+  },
+  "homepage": "https://github.com/jbenner-radham/typescript-skeleton#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "typescript": "^2.5.2",
+    "webpack": "^3.6.0"
+  }
+}
