@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './lib/index.ts',
     output: {
         filename: 'bundle.min.js',
         path: path.resolve(__dirname, 'dist')
