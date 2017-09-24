@@ -22,6 +22,7 @@ module.exports = {
 };
 
 module.exports.plugins = (module.exports.plugins || []).concat([
+    /** @see http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin **/
     new webpack.optimize.UglifyJsPlugin({
         compress: {
             warnings: false
