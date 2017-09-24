@@ -7,7 +7,7 @@ module.exports = {
         filename: 'bundle.min.js',
         path: path.resolve(__dirname, 'dist')
     },
-    devtool: 'source-map',
+    devtool: 'source-map', // Or alternatively: `inline-source-map`
     resolve: {
         extensions: ['.js', '.ts']
     },
@@ -15,18 +15,20 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                use: 'awesome-typescript-loader'
+                use: [
+                    /** @see https://www.npmjs.com/package/awesome-typescript-loader */
+                    'awesome-typescript-loader'
+                ]
             }
         ]
-    }
+    },
+    plugins: [
+        /** @see http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin */
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            },
+            sourceMap: true
+        })
+    ]
 };
-
-module.exports.plugins = (module.exports.plugins || []).concat([
-    /** @see http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin **/
-    new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false
-        },
-        sourceMap: true
-    })
-]);
