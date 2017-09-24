@@ -1,12 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    entry: [
-        'babel-polyfill',
-        './src/index.ts'
-    ],
+    entry: './src/index.ts',
     output: {
-        filename: 'bundle.js',
+        filename: 'bundle.min.js',
         path: path.resolve(__dirname, 'dist')
     },
     devtool: 'source-map',
@@ -17,11 +15,17 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                use: [
-                    'babel-loader',
-                    'awesome-typescript-loader' // https://stackoverflow.com/questions/38320220/how-to-setup-typescript-babel-webpack#answer-38321269
-                ]
+                use: 'awesome-typescript-loader'
             }
         ]
     }
 };
+
+module.exports.plugins = (module.exports.plugins || []).concat([
+    new webpack.optimize.UglifyJsPlugin({
+        compress: {
+            warnings: false
+        },
+        sourceMap: true
+    })
+]);

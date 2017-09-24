@@ -2,9 +2,11 @@
   "name": "typescript-skeleton",
   "version": "0.0.0",
   "description": "A TypeScript skeleton project.",
-  "main": "index.js",
+  "main": "dist/bundle.min.js",
   "scripts": {
     "build": "webpack",
+    "clean": "rm -rf dist/",
+    "start": "node dist/bundle.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +14,6 @@
     "url": "git+https://github.com/jbenner-radham/typescript-skeleton.git"
   },
   "keywords": [
-    "babel",
     "boilerplate",
     "es2017",
     "skeleton",
@@ -27,10 +28,6 @@
   "homepage": "https://github.com/jbenner-radham/typescript-skeleton#readme",
   "devDependencies": {
     "awesome-typescript-loader": "^3.2.3",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
     "typescript": "^2.5.2",
     "webpack": "^3.6.0"
   }
