@@ -16,8 +16,8 @@ module.exports = {
             {
                 test: /\.ts$/,
                 use: [
-                    /** @see https://www.npmjs.com/package/awesome-typescript-loader */
-                    'awesome-typescript-loader'
+                    /** @see https://www.npmjs.com/package/ts-loader */
+                    'ts-loader'
                 ]
             }
         ]

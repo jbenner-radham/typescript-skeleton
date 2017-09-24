@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/jbenner-radham/typescript-skeleton#readme",
   "devDependencies": {
-    "awesome-typescript-loader": "^3.2.3",
+    "ts-loader": "^2.3.7",
     "typescript": "^2.5.2",
     "webpack": "^3.6.0"
   }
