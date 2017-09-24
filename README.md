@@ -26,8 +26,8 @@ $ yarn test # Or alternatively: `npm test`
 
 Reference
 ---------
-* [package.json @npm Documentation](https://docs.npmjs.com/files/package.json)
-* [Packages/1.0 § Package Directory Layout @CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Packages/1.0#Package_Directory_Layout)
+* [package.json @ npm Documentation](https://docs.npmjs.com/files/package.json)
+* [Packages/1.0 § Package Directory Layout @ CommonJS Spec Wiki](http://wiki.commonjs.org/wiki/Packages/1.0#Package_Directory_Layout)
 * [Yarn](https://yarnpkg.com/)
 
 License
