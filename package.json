@@ -1,8 +1,12 @@
 {
   "name": "typescript-skeleton",
   "version": "0.0.0",
-  "description": "A TypeScript skeleton project.",
-  "main": "dist/bundle.min.js",
+  "description": "A TypeScript skeleton project with Webpack bundling.",
+  "main": "webpack.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
   "scripts": {
     "build": "webpack",
     "clean": "rm -rf dist/",
